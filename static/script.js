@@ -10,7 +10,8 @@ document.getElementById("fitnessForm").addEventListener("submit", async function
         time: document.getElementById("time").value
     };
 
-    const response = await fetch("http://127.0.0.1:5000/generate_plan", {
+    const response = await 
+        fetch("http://127.0.0.1:5000/generate_plan", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
